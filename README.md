@@ -2,7 +2,9 @@
 
 Course: https://gorails.com/series/build-a-blog-with-rails-7
 
-Current module: https://gorails.com/episodes/adding-tailwindcss-to-rails
+Current module: https://gorails.com/episodes/adding-scheduled-blog-posts
+
+To run: `bin/dev`
 
 ## Notes
 
