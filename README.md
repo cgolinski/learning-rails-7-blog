@@ -2,7 +2,7 @@
 
 Course: https://gorails.com/series/build-a-blog-with-rails-7
 
-Current module: https://gorails.com/episodes/adding-scheduled-blog-posts
+Current module: https://gorails.com/episodes/sorting-blog-posts-with-scopes
 
 To run: `bin/dev`
 
