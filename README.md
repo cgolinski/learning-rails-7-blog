@@ -1,6 +1,7 @@
 # README
 
 Course: https://gorails.com/series/build-a-blog-with-rails-7
+
 Current module: https://gorails.com/episodes/adding-tailwindcss-to-rails
 
 ## Notes
@@ -8,15 +9,20 @@ Current module: https://gorails.com/episodes/adding-tailwindcss-to-rails
 ### MVC
 
 Model: db and validations. Ruby classes. E.g. email, validation that not gmail.com
+
 View: HTML, JSON, output sent to user
+
 Controller: handles requests
 
 Routes: e.g. /sign_up url path. Tells which controller to send request to, e.g. Users::Registrations Controller
 Helpers:
 
 GET /sign_up --> Users::Registrations Controller --> User model --> Users::Registrations Controller --> form HTML view
+
 POST /sign_up --> Users::Registrations Controller --> User model --> try to save to db --> success/failure back to Users::Registrations Controller
+
 -success-> login user (set a cookie); redirect to /homepage
+
 -failure-> render form HTML errors
 
 ### Rails commands
@@ -26,6 +32,7 @@ In repo in Terminal: `rails c`
 #### Generate new model
 
 `rails generate model BlogPost title:string body:text`
+
 Creates `app/models/blog_post.rb` and `db/migrate/20241211130306_create_blog_posts.rb`
 
 #### Create new blog post
@@ -35,6 +42,7 @@ Creates `app/models/blog_post.rb` and `db/migrate/20241211130306_create_blog_pos
 #### Update existing blog post
 
 `blog_post = BlogPost.find(1)`
+
 `BlogPost.update(title: "Updated title", body: "This is my very first blog post")`
 
 #### Delete blog post
@@ -44,6 +52,7 @@ Creates `app/models/blog_post.rb` and `db/migrate/20241211130306_create_blog_pos
 #### See Active Record model names converted into other things
 
 `BlogPost.model_name`
+
 provides ways to convert the class name into other things you might need
 
 ```
