@@ -6,6 +6,13 @@ class BlogPostsController < ApplicationController
   def index
     # Instance variable is shared with erb template. If used local variable instead, then would be cleared after this instance finishes executing.
     @blog_posts = user_signed_in? ? BlogPost.sorted : BlogPost.published.sorted
+    @pagy, @blog_posts = pagy(@blog_posts)
+  rescue Pagy::OverflowError
+    redirect_to root_path(page: 1)
+
+    # # alternative way to handle overflow error:
+    # params[:page] = 1
+    # retry
   end
 
 

@@ -2,7 +2,7 @@
 
 Course: https://gorails.com/series/build-a-blog-with-rails-7
 
-Current module: https://gorails.com/episodes/how-to-upgrade-ruby-versions
+Current module: https://gorails.com/episodes/how-to-add-pagination-for-blog-posts-in-rails
 
 To run: `bin/dev`
 

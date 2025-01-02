@@ -12,3 +12,9 @@
   <%= blog_post.content %>
   </div>
 <% end %>
+
+<% if @pagy.count > @pagy.limit %>
+  <div class="my-16">
+    <%== pagy_nav(@pagy) %>
+  </div>
+<% end %>
