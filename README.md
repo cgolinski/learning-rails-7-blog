@@ -2,7 +2,7 @@
 
 Course: https://gorails.com/series/build-a-blog-with-rails-7
 
-Current module: https://gorails.com/episodes/rich-text-blog-posts-with-actiontext
+Current module: https://gorails.com/episodes/how-to-upgrade-ruby-versions
 
 To run: `bin/dev`
 
